@@ -8,16 +8,17 @@ let secondCard = 4;
 let sum = firstCard + secondCard;
 let haBlackJack = false;
 let isAlive = true;
+let message = "";
 
 if (sum <= 20) {
- console.log("do you want to draw a new card");
+ message = "do you want to draw a new card";
 } else if (sum === 21) {
- console.log("Wohoo you have got BlackJack!");
+ message = "Wohoo you have got BlackJack!";
  haBlackJack = true;
 } else {
- console.log("Your are out of the game");
+ message = "Your are out of the game";
  isAlive = false;
 }
 
 // Cash out!
-console.log(haBlackJack);
+console.log(message);
